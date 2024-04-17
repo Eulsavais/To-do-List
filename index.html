@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDoList</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="todoApp">
+			<h1>To-Do list</h1>
+			<div class="input-row">
+				<input type="text" placeholder="Добавьте вашу цель" id="input-box">
+				<button onclick="addTask()" class="main-btn">Добавить</button>
+			</div>
+
+			<ul id="list-container">
+
+			</ul>
+
+			<div class="textForEmpty">
+				Ваш список пуст!!!
+			</div>
+
+			<button id="clear" class="main-btn" onclick="removeAllTask(); toggleText(); saveData();">Очистить</button>
+		</div>
+</body>
+
+</html>
